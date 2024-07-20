@@ -1,5 +1,5 @@
 # Quadruped Robot using Ros2
-My Quadruped Robor project with ROS
+My Quadruped Robot project with ROS
 
 I wanted to build a Spot-inspired robot during my winter and summer break 2024. This repository will contain the source code of this project .
 

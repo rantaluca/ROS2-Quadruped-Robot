@@ -3,7 +3,7 @@ My Quadruped Robor project with ROS
 
 I wanted to build a Spot-inspired robot during my winter and summer break 2024. This repository will contain the source code of this project .
 
-*What is different from other Spot-Micro open source projects? *
+## What is different from other Spot-Micro open source projects?
 
 The quadruped was entirely redesigned. Despite the availability of numerous open-source models of quadruped robots online, I wanted to challenge myself by creating my version from scratch using Fusion 360. The main feature of the design is that I added mechanical compliance to the legs using springs to counterbalance the rigidity of the servo motors.
 

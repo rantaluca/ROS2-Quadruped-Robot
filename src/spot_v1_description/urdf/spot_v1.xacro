@@ -25,6 +25,36 @@
   </collision>
 </link>
 
+
+<!-- Adjusted LIDAR link and joint -->
+<link name="base_laser">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="0.001" iyy="0.001" izz="0.001" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <cylinder length="0.1" radius="0.05"/>
+    </geometry>
+    <material name="gray">
+      <color rgba="0.5 0.5 0.5 1.0"/>
+    </material>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <cylinder length="0.1" radius="0.05"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="base_laser_joint" type="fixed">
+  <parent link="base_link"/>
+  <child link="base_laser"/>
+  <origin xyz="0.1 0 0.1" rpy="0 0 0"/>
+</joint>
 <link name="lower_fl_1">
   <inertial>
     <origin xyz="0.043812108672994565 -0.0100340995070487 0.012048486431752617" rpy="0 0 0"/>
@@ -372,5 +402,7 @@
   <axis xyz="-1.0 0.0 0.0"/>
   <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
 </joint>
+
+
 
 </robot>

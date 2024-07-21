@@ -1,0 +1,22 @@
+[6.705s] Invoking command in '/home/rob/spot_ws/src/servo_controller': PYTHONPATH=/home/rob/spot_ws/build/servo_controller/prefix_override:/home/rob/spot_ws/install/servo_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/servo_controller build --build-base /home/rob/spot_ws/build/servo_controller/build install --record /home/rob/spot_ws/build/servo_controller/install.log --single-version-externally-managed
+[8.118s] running egg_info
+[8.122s] writing ../../build/servo_controller/servo_controller.egg-info/PKG-INFO
+[8.124s] writing dependency_links to ../../build/servo_controller/servo_controller.egg-info/dependency_links.txt
+[8.127s] writing entry points to ../../build/servo_controller/servo_controller.egg-info/entry_points.txt
+[8.128s] writing requirements to ../../build/servo_controller/servo_controller.egg-info/requires.txt
+[8.129s] writing top-level names to ../../build/servo_controller/servo_controller.egg-info/top_level.txt
+[8.142s] reading manifest file '../../build/servo_controller/servo_controller.egg-info/SOURCES.txt'
+[8.148s] writing manifest file '../../build/servo_controller/servo_controller.egg-info/SOURCES.txt'
+[8.149s] running build
+[8.150s] running build_py
+[8.152s] running install
+[8.152s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[8.153s]   warnings.warn(
+[8.154s] running install_lib
+[8.160s] running install_data
+[8.163s] running install_egg_info
+[8.174s] removing '/home/rob/spot_ws/install/servo_controller/lib/python3.10/site-packages/servo_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[8.176s] Copying ../../build/servo_controller/servo_controller.egg-info to /home/rob/spot_ws/install/servo_controller/lib/python3.10/site-packages/servo_controller-0.0.0-py3.10.egg-info
+[8.184s] running install_scripts
+[8.346s] writing list of installed files to '/home/rob/spot_ws/build/servo_controller/install.log'
+[8.762s] Invoked command in '/home/rob/spot_ws/src/servo_controller' returned '0': PYTHONPATH=/home/rob/spot_ws/build/servo_controller/prefix_override:/home/rob/spot_ws/install/servo_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/servo_controller build --build-base /home/rob/spot_ws/build/servo_controller/build install --record /home/rob/spot_ws/build/servo_controller/install.log --single-version-externally-managed

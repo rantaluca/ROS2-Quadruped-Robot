@@ -1,0 +1,24 @@
+[7.468s] Invoking command in '/home/rob/spot_ws/src/spot_v1_description': PYTHONPATH=/home/rob/spot_ws/build/spot_v1_description/prefix_override:/home/rob/spot_ws/install/spot_v1_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/spot_v1_description build --build-base /home/rob/spot_ws/build/spot_v1_description/build install --record /home/rob/spot_ws/build/spot_v1_description/install.log --install-scripts $base/lib/spot_v1_description --single-version-externally-managed
+[11.547s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[11.548s]   warnings.warn(
+[11.656s] running egg_info
+[11.660s] writing ../../build/spot_v1_description/spot_v1_description.egg-info/PKG-INFO
+[11.674s] writing dependency_links to ../../build/spot_v1_description/spot_v1_description.egg-info/dependency_links.txt
+[11.677s] writing entry points to ../../build/spot_v1_description/spot_v1_description.egg-info/entry_points.txt
+[11.678s] writing requirements to ../../build/spot_v1_description/spot_v1_description.egg-info/requires.txt
+[11.679s] writing top-level names to ../../build/spot_v1_description/spot_v1_description.egg-info/top_level.txt
+[11.700s] reading manifest file '../../build/spot_v1_description/spot_v1_description.egg-info/SOURCES.txt'
+[11.700s] writing manifest file '../../build/spot_v1_description/spot_v1_description.egg-info/SOURCES.txt'
+[11.701s] running build
+[11.702s] running build_py
+[11.703s] running install
+[11.704s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[11.705s]   warnings.warn(
+[11.706s] running install_lib
+[11.717s] running install_data
+[11.721s] running install_egg_info
+[11.733s] removing '/home/rob/spot_ws/install/spot_v1_description/lib/python3.10/site-packages/spot_v1_description-0.0.0-py3.10.egg-info' (and everything under it)
+[11.737s] Copying ../../build/spot_v1_description/spot_v1_description.egg-info to /home/rob/spot_ws/install/spot_v1_description/lib/python3.10/site-packages/spot_v1_description-0.0.0-py3.10.egg-info
+[11.747s] running install_scripts
+[11.883s] writing list of installed files to '/home/rob/spot_ws/build/spot_v1_description/install.log'
+[12.573s] Invoked command in '/home/rob/spot_ws/src/spot_v1_description' returned '0': PYTHONPATH=/home/rob/spot_ws/build/spot_v1_description/prefix_override:/home/rob/spot_ws/install/spot_v1_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/spot_v1_description build --build-base /home/rob/spot_ws/build/spot_v1_description/build install --record /home/rob/spot_ws/build/spot_v1_description/install.log --install-scripts $base/lib/spot_v1_description --single-version-externally-managed

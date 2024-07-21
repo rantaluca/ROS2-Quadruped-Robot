@@ -1,0 +1,26 @@
+[6.984s] Invoking command in '/home/rob/spot_ws/src/bwt901cl_pkg': PYTHONPATH=/home/rob/spot_ws/build/bwt901cl_pkg/prefix_override:/home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bwt901cl_pkg build --build-base /home/rob/spot_ws/build/bwt901cl_pkg/build install --record /home/rob/spot_ws/build/bwt901cl_pkg/install.log --install-scripts $base/lib/bwt901cl_pkg --single-version-externally-managed
+[8.324s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[8.325s]   warnings.warn(
+[8.369s] running egg_info
+[8.372s] writing ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/PKG-INFO
+[8.374s] writing dependency_links to ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/dependency_links.txt
+[8.376s] writing entry points to ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/entry_points.txt
+[8.378s] writing requirements to ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/requires.txt
+[8.378s] writing top-level names to ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/top_level.txt
+[8.392s] reading manifest file '../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/SOURCES.txt'
+[8.393s] adding license file 'LICENSE'
+[8.395s] writing manifest file '../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/SOURCES.txt'
+[8.397s] running build
+[8.397s] running build_py
+[8.399s] running install
+[8.401s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[8.402s]   warnings.warn(
+[8.402s] running install_lib
+[8.412s] running install_data
+[8.413s] running install_egg_info
+[8.420s] removing '/home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages/bwt901cl_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[8.423s] Copying ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info to /home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages/bwt901cl_pkg-0.0.0-py3.10.egg-info
+[8.431s] running install_scripts
+[8.553s] Installing imu_bwt901cl script to /home/rob/spot_ws/install/bwt901cl_pkg/lib/bwt901cl_pkg
+[8.555s] writing list of installed files to '/home/rob/spot_ws/build/bwt901cl_pkg/install.log'
+[9.056s] Invoked command in '/home/rob/spot_ws/src/bwt901cl_pkg' returned '0': PYTHONPATH=/home/rob/spot_ws/build/bwt901cl_pkg/prefix_override:/home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bwt901cl_pkg build --build-base /home/rob/spot_ws/build/bwt901cl_pkg/build install --record /home/rob/spot_ws/build/bwt901cl_pkg/install.log --install-scripts $base/lib/bwt901cl_pkg --single-version-externally-managed

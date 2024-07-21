@@ -1,0 +1,3 @@
+[console_scripts]
+imu_bwt901cl = bwt901cl_pkg.imu_bwt901cl:main
+

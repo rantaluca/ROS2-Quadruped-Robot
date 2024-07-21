@@ -1,0 +1,61 @@
+[6.540s] Invoking command in '/home/rob/spot_ws/src/spot_v1_description': PYTHONPATH=/home/rob/spot_ws/build/spot_v1_description/prefix_override:/home/rob/spot_ws/install/spot_v1_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/spot_v1_description build --build-base /home/rob/spot_ws/build/spot_v1_description/build install --record /home/rob/spot_ws/build/spot_v1_description/install.log --install-scripts $base/lib/spot_v1_description --single-version-externally-managed
+[7.890s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[7.891s]   warnings.warn(
+[7.930s] running egg_info
+[7.933s] creating ../../build/spot_v1_description/spot_v1_description.egg-info
+[7.935s] writing ../../build/spot_v1_description/spot_v1_description.egg-info/PKG-INFO
+[7.936s] writing dependency_links to ../../build/spot_v1_description/spot_v1_description.egg-info/dependency_links.txt
+[7.938s] writing entry points to ../../build/spot_v1_description/spot_v1_description.egg-info/entry_points.txt
+[7.939s] writing requirements to ../../build/spot_v1_description/spot_v1_description.egg-info/requires.txt
+[7.940s] writing top-level names to ../../build/spot_v1_description/spot_v1_description.egg-info/top_level.txt
+[7.942s] writing manifest file '../../build/spot_v1_description/spot_v1_description.egg-info/SOURCES.txt'
+[7.950s] reading manifest file '../../build/spot_v1_description/spot_v1_description.egg-info/SOURCES.txt'
+[7.955s] writing manifest file '../../build/spot_v1_description/spot_v1_description.egg-info/SOURCES.txt'
+[7.957s] running build
+[7.958s] running build_py
+[7.959s] creating /home/rob/spot_ws/build/spot_v1_description/build
+[7.961s] creating /home/rob/spot_ws/build/spot_v1_description/build/lib
+[7.962s] creating /home/rob/spot_ws/build/spot_v1_description/build/lib/spot_v1_description
+[7.964s] copying spot_v1_description/__init__.py -> /home/rob/spot_ws/build/spot_v1_description/build/lib/spot_v1_description
+[7.965s] running install
+[7.967s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[7.968s]   warnings.warn(
+[7.971s] running install_lib
+[7.976s] creating /home/rob/spot_ws/install/spot_v1_description/lib/python3.10/site-packages/spot_v1_description
+[7.976s] copying /home/rob/spot_ws/build/spot_v1_description/build/lib/spot_v1_description/__init__.py -> /home/rob/spot_ws/install/spot_v1_description/lib/python3.10/site-packages/spot_v1_description
+[7.980s] byte-compiling /home/rob/spot_ws/install/spot_v1_description/lib/python3.10/site-packages/spot_v1_description/__init__.py to __init__.cpython-310.pyc
+[7.982s] running install_data
+[7.983s] creating /home/rob/spot_ws/install/spot_v1_description/share/ament_index
+[7.983s] creating /home/rob/spot_ws/install/spot_v1_description/share/ament_index/resource_index
+[7.986s] creating /home/rob/spot_ws/install/spot_v1_description/share/ament_index/resource_index/packages
+[7.989s] copying resource/spot_v1_description -> /home/rob/spot_ws/install/spot_v1_description/share/ament_index/resource_index/packages
+[7.990s] copying package.xml -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description
+[7.991s] creating /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/launch
+[7.992s] copying launch/gazebo.launch.py -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/launch
+[7.995s] copying launch/display.launch.py -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/launch
+[7.996s] creating /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/urdf
+[7.997s] copying urdf/spot_v1.trans -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/urdf
+[7.998s] copying urdf/spot_v1.gazebo -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/urdf
+[8.000s] copying urdf/materials.xacro -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/urdf
+[8.001s] copying urdf/spot_v1.xacro -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/urdf
+[8.003s] creating /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/meshes
+[8.003s] copying meshes/upper_bl_1.stl -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/meshes
+[8.005s] copying meshes/elbow_fl_1.stl -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/meshes
+[8.007s] copying meshes/lower_fl_1.stl -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/meshes
+[8.008s] copying meshes/elbow_fr_1.stl -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/meshes
+[8.009s] copying meshes/lower_fr_1.stl -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/meshes
+[8.010s] copying meshes/upper_fr_1.stl -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/meshes
+[8.012s] copying meshes/base_link.stl -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/meshes
+[8.013s] copying meshes/lower_br_1.stl -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/meshes
+[8.014s] copying meshes/elbow_br_1.stl -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/meshes
+[8.016s] copying meshes/elbow_bl_5.stl -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/meshes
+[8.017s] copying meshes/upper_br_1.stl -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/meshes
+[8.021s] copying meshes/lower_bl_1.stl -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/meshes
+[8.023s] copying meshes/upper_fl_1.stl -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/meshes
+[8.026s] creating /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/config
+[8.026s] copying config/display.rviz -> /home/rob/spot_ws/install/spot_v1_description/share/spot_v1_description/config
+[8.027s] running install_egg_info
+[8.028s] Copying ../../build/spot_v1_description/spot_v1_description.egg-info to /home/rob/spot_ws/install/spot_v1_description/lib/python3.10/site-packages/spot_v1_description-0.0.0-py3.10.egg-info
+[8.035s] running install_scripts
+[8.154s] writing list of installed files to '/home/rob/spot_ws/build/spot_v1_description/install.log'
+[8.868s] Invoked command in '/home/rob/spot_ws/src/spot_v1_description' returned '0': PYTHONPATH=/home/rob/spot_ws/build/spot_v1_description/prefix_override:/home/rob/spot_ws/install/spot_v1_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/spot_v1_description build --build-base /home/rob/spot_ws/build/spot_v1_description/build install --record /home/rob/spot_ws/build/spot_v1_description/install.log --install-scripts $base/lib/spot_v1_description --single-version-externally-managed

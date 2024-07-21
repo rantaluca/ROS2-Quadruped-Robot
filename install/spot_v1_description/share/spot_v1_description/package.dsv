@@ -1,0 +1,6 @@
+source;share/spot_v1_description/hook/pythonpath.ps1
+source;share/spot_v1_description/hook/pythonpath.dsv
+source;share/spot_v1_description/hook/pythonpath.sh
+source;share/spot_v1_description/hook/ament_prefix_path.ps1
+source;share/spot_v1_description/hook/ament_prefix_path.dsv
+source;share/spot_v1_description/hook/ament_prefix_path.sh

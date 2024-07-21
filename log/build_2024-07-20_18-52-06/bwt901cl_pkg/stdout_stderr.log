@@ -1,0 +1,48 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+running egg_info
+creating ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info
+writing ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/requires.txt
+writing top-level names to ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/top_level.txt
+writing manifest file '../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/rob/spot_ws/build/bwt901cl_pkg/build
+creating /home/rob/spot_ws/build/bwt901cl_pkg/build/lib
+creating /home/rob/spot_ws/build/bwt901cl_pkg/build/lib/bwt901cl_pkg
+creating /home/rob/spot_ws/build/bwt901cl_pkg/build/lib/bwt901cl_pkg/src
+copying bwt901cl_pkg/src/__init__.py -> /home/rob/spot_ws/build/bwt901cl_pkg/build/lib/bwt901cl_pkg/src
+copying bwt901cl_pkg/src/bwt901cl.py -> /home/rob/spot_ws/build/bwt901cl_pkg/build/lib/bwt901cl_pkg/src
+copying bwt901cl_pkg/__init__.py -> /home/rob/spot_ws/build/bwt901cl_pkg/build/lib/bwt901cl_pkg
+copying bwt901cl_pkg/imu_bwt901cl.py -> /home/rob/spot_ws/build/bwt901cl_pkg/build/lib/bwt901cl_pkg
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages/bwt901cl_pkg
+copying /home/rob/spot_ws/build/bwt901cl_pkg/build/lib/bwt901cl_pkg/__init__.py -> /home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages/bwt901cl_pkg
+copying /home/rob/spot_ws/build/bwt901cl_pkg/build/lib/bwt901cl_pkg/imu_bwt901cl.py -> /home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages/bwt901cl_pkg
+creating /home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages/bwt901cl_pkg/src
+copying /home/rob/spot_ws/build/bwt901cl_pkg/build/lib/bwt901cl_pkg/src/bwt901cl.py -> /home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages/bwt901cl_pkg/src
+copying /home/rob/spot_ws/build/bwt901cl_pkg/build/lib/bwt901cl_pkg/src/__init__.py -> /home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages/bwt901cl_pkg/src
+byte-compiling /home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages/bwt901cl_pkg/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages/bwt901cl_pkg/imu_bwt901cl.py to imu_bwt901cl.cpython-310.pyc
+byte-compiling /home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages/bwt901cl_pkg/src/bwt901cl.py to bwt901cl.cpython-310.pyc
+byte-compiling /home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages/bwt901cl_pkg/src/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/rob/spot_ws/install/bwt901cl_pkg/share/ament_index
+creating /home/rob/spot_ws/install/bwt901cl_pkg/share/ament_index/resource_index
+creating /home/rob/spot_ws/install/bwt901cl_pkg/share/ament_index/resource_index/packages
+copying resource/bwt901cl_pkg -> /home/rob/spot_ws/install/bwt901cl_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/rob/spot_ws/install/bwt901cl_pkg/share/bwt901cl_pkg
+running install_egg_info
+Copying ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info to /home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages/bwt901cl_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing imu_bwt901cl script to /home/rob/spot_ws/install/bwt901cl_pkg/lib/bwt901cl_pkg
+writing list of installed files to '/home/rob/spot_ws/build/bwt901cl_pkg/install.log'

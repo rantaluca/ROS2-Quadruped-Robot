@@ -1,0 +1,177 @@
+[0.000000] (-) TimerEvent: {}
+[0.001566] (bwt901cl_pkg) JobQueued: {'identifier': 'bwt901cl_pkg', 'dependencies': OrderedDict()}
+[0.002153] (servo_controller) JobQueued: {'identifier': 'servo_controller', 'dependencies': OrderedDict()}
+[0.002245] (spot_v1_description) JobQueued: {'identifier': 'spot_v1_description', 'dependencies': OrderedDict()}
+[0.002555] (bwt901cl_pkg) JobStarted: {'identifier': 'bwt901cl_pkg'}
+[0.098870] (-) TimerEvent: {}
+[0.200668] (-) TimerEvent: {}
+[0.301724] (-) TimerEvent: {}
+[0.346823] (servo_controller) JobStarted: {'identifier': 'servo_controller'}
+[0.401906] (-) TimerEvent: {}
+[0.502701] (-) TimerEvent: {}
+[0.603788] (-) TimerEvent: {}
+[0.632730] (spot_v1_description) JobStarted: {'identifier': 'spot_v1_description'}
+[0.704057] (-) TimerEvent: {}
+[0.804880] (-) TimerEvent: {}
+[0.905996] (-) TimerEvent: {}
+[1.006719] (-) TimerEvent: {}
+[1.107435] (-) TimerEvent: {}
+[1.208121] (-) TimerEvent: {}
+[1.308809] (-) TimerEvent: {}
+[1.409436] (-) TimerEvent: {}
+[1.510078] (-) TimerEvent: {}
+[1.610705] (-) TimerEvent: {}
+[1.711340] (-) TimerEvent: {}
+[1.812027] (-) TimerEvent: {}
+[1.912657] (-) TimerEvent: {}
+[2.013487] (-) TimerEvent: {}
+[2.114550] (-) TimerEvent: {}
+[2.215774] (-) TimerEvent: {}
+[2.317105] (-) TimerEvent: {}
+[2.420110] (-) TimerEvent: {}
+[2.520812] (-) TimerEvent: {}
+[2.621587] (-) TimerEvent: {}
+[2.722282] (-) TimerEvent: {}
+[2.822913] (-) TimerEvent: {}
+[2.923627] (-) TimerEvent: {}
+[3.024264] (-) TimerEvent: {}
+[3.124902] (-) TimerEvent: {}
+[3.225515] (-) TimerEvent: {}
+[3.326291] (-) TimerEvent: {}
+[3.427305] (-) TimerEvent: {}
+[3.528079] (-) TimerEvent: {}
+[3.629206] (-) TimerEvent: {}
+[3.729976] (-) TimerEvent: {}
+[3.832342] (-) TimerEvent: {}
+[3.970850] (-) TimerEvent: {}
+[4.071977] (-) TimerEvent: {}
+[4.172625] (-) TimerEvent: {}
+[4.273240] (-) TimerEvent: {}
+[4.373851] (-) TimerEvent: {}
+[4.474484] (-) TimerEvent: {}
+[4.575188] (-) TimerEvent: {}
+[4.675940] (-) TimerEvent: {}
+[4.778330] (-) TimerEvent: {}
+[4.879155] (-) TimerEvent: {}
+[4.980309] (-) TimerEvent: {}
+[5.081076] (-) TimerEvent: {}
+[5.181922] (-) TimerEvent: {}
+[5.282834] (-) TimerEvent: {}
+[5.383645] (-) TimerEvent: {}
+[5.484535] (-) TimerEvent: {}
+[5.585295] (-) TimerEvent: {}
+[5.686094] (-) TimerEvent: {}
+[5.786922] (-) TimerEvent: {}
+[5.887703] (-) TimerEvent: {}
+[5.988450] (-) TimerEvent: {}
+[6.089195] (-) TimerEvent: {}
+[6.189987] (-) TimerEvent: {}
+[6.290806] (-) TimerEvent: {}
+[6.391609] (-) TimerEvent: {}
+[6.492471] (-) TimerEvent: {}
+[6.593310] (-) TimerEvent: {}
+[6.694586] (-) TimerEvent: {}
+[6.798252] (-) TimerEvent: {}
+[6.905009] (-) TimerEvent: {}
+[6.987338] (spot_v1_description) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/spot_v1_description', 'build', '--build-base', '/home/rob/spot_ws/build/spot_v1_description/build', 'install', '--record', '/home/rob/spot_ws/build/spot_v1_description/install.log', '--install-scripts', '$base/lib/spot_v1_description', '--single-version-externally-managed'], 'cwd': '/home/rob/spot_ws/src/spot_v1_description', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rob', 'SSH_CLIENT': '192.168.8.118 58045 22', 'LC_TIME': 'fr_FR.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/rob', 'OLDPWD': '/home/rob', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'fr_FR.UTF-8', 'ROS_IP': '192.168.8.150', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'LOGNAME': 'rob', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'ROS_MASTER_URI': 'http://192.168.8.150:11311', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'PWD': '/home/rob/spot_ws/build/spot_v1_description', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.8.118 58045 192.168.8.150 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rob/spot_ws/build/spot_v1_description/prefix_override:/home/rob/spot_ws/install/spot_v1_description/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1'}, 'shell': False}
+[7.008281] (-) TimerEvent: {}
+[7.019152] (bwt901cl_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/bwt901cl_pkg', 'build', '--build-base', '/home/rob/spot_ws/build/bwt901cl_pkg/build', 'install', '--record', '/home/rob/spot_ws/build/bwt901cl_pkg/install.log', '--install-scripts', '$base/lib/bwt901cl_pkg', '--single-version-externally-managed'], 'cwd': '/home/rob/spot_ws/src/bwt901cl_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rob', 'SSH_CLIENT': '192.168.8.118 58045 22', 'LC_TIME': 'fr_FR.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/rob', 'OLDPWD': '/home/rob', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'fr_FR.UTF-8', 'ROS_IP': '192.168.8.150', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'LOGNAME': 'rob', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'ROS_MASTER_URI': 'http://192.168.8.150:11311', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'PWD': '/home/rob/spot_ws/build/bwt901cl_pkg', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.8.118 58045 192.168.8.150 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rob/spot_ws/build/bwt901cl_pkg/prefix_override:/home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1'}, 'shell': False}
+[7.050432] (servo_controller) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/servo_controller', 'build', '--build-base', '/home/rob/spot_ws/build/servo_controller/build', 'install', '--record', '/home/rob/spot_ws/build/servo_controller/install.log', '--single-version-externally-managed'], 'cwd': '/home/rob/spot_ws/src/servo_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rob', 'SSH_CLIENT': '192.168.8.118 58045 22', 'LC_TIME': 'fr_FR.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/rob', 'OLDPWD': '/home/rob', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'fr_FR.UTF-8', 'ROS_IP': '192.168.8.150', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'LOGNAME': 'rob', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'ROS_MASTER_URI': 'http://192.168.8.150:11311', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'PWD': '/home/rob/spot_ws/build/servo_controller', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.8.118 58045 192.168.8.150 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rob/spot_ws/build/servo_controller/prefix_override:/home/rob/spot_ws/install/servo_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1'}, 'shell': False}
+[7.108460] (-) TimerEvent: {}
+[7.210172] (-) TimerEvent: {}
+[7.313047] (-) TimerEvent: {}
+[7.415318] (-) TimerEvent: {}
+[7.517607] (-) TimerEvent: {}
+[7.619059] (-) TimerEvent: {}
+[7.720697] (-) TimerEvent: {}
+[7.822442] (-) TimerEvent: {}
+[7.924231] (-) TimerEvent: {}
+[8.025844] (-) TimerEvent: {}
+[8.127278] (-) TimerEvent: {}
+[8.229002] (-) TimerEvent: {}
+[8.330745] (-) TimerEvent: {}
+[8.355542] (bwt901cl_pkg) StderrLine: {'line': b"/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[8.356378] (bwt901cl_pkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[8.360129] (spot_v1_description) StderrLine: {'line': b"/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[8.360898] (spot_v1_description) StderrLine: {'line': b'  warnings.warn(\n'}
+[8.395561] (bwt901cl_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[8.399270] (bwt901cl_pkg) StdoutLine: {'line': b'writing ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/PKG-INFO\n'}
+[8.401284] (bwt901cl_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/dependency_links.txt\n'}
+[8.402505] (bwt901cl_pkg) StdoutLine: {'line': b'writing entry points to ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/entry_points.txt\n'}
+[8.403425] (spot_v1_description) StdoutLine: {'line': b'running egg_info\n'}
+[8.404417] (bwt901cl_pkg) StdoutLine: {'line': b'writing requirements to ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/requires.txt\n'}
+[8.405223] (bwt901cl_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/top_level.txt\n'}
+[8.406762] (spot_v1_description) StdoutLine: {'line': b'writing ../../build/spot_v1_description/spot_v1_description.egg-info/PKG-INFO\n'}
+[8.408237] (spot_v1_description) StdoutLine: {'line': b'writing dependency_links to ../../build/spot_v1_description/spot_v1_description.egg-info/dependency_links.txt\n'}
+[8.409325] (spot_v1_description) StdoutLine: {'line': b'writing entry points to ../../build/spot_v1_description/spot_v1_description.egg-info/entry_points.txt\n'}
+[8.410566] (spot_v1_description) StdoutLine: {'line': b'writing requirements to ../../build/spot_v1_description/spot_v1_description.egg-info/requires.txt\n'}
+[8.412228] (spot_v1_description) StdoutLine: {'line': b'writing top-level names to ../../build/spot_v1_description/spot_v1_description.egg-info/top_level.txt\n'}
+[8.415521] (bwt901cl_pkg) StdoutLine: {'line': b"reading manifest file '../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/SOURCES.txt'\n"}
+[8.417337] (bwt901cl_pkg) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[8.420662] (bwt901cl_pkg) StdoutLine: {'line': b"writing manifest file '../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/SOURCES.txt'\n"}
+[8.421790] (bwt901cl_pkg) StdoutLine: {'line': b'running build\n'}
+[8.422298] (bwt901cl_pkg) StdoutLine: {'line': b'running build_py\n'}
+[8.423853] (spot_v1_description) StdoutLine: {'line': b"reading manifest file '../../build/spot_v1_description/spot_v1_description.egg-info/SOURCES.txt'\n"}
+[8.425243] (bwt901cl_pkg) StdoutLine: {'line': b'running install\n'}
+[8.426310] (bwt901cl_pkg) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[8.426905] (bwt901cl_pkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[8.427762] (bwt901cl_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[8.430574] (spot_v1_description) StdoutLine: {'line': b"writing manifest file '../../build/spot_v1_description/spot_v1_description.egg-info/SOURCES.txt'\n"}
+[8.431087] (-) TimerEvent: {}
+[8.432842] (spot_v1_description) StdoutLine: {'line': b'running build\n'}
+[8.433662] (spot_v1_description) StdoutLine: {'line': b'running build_py\n'}
+[8.434508] (bwt901cl_pkg) StdoutLine: {'line': b'running install_data\n'}
+[8.435745] (spot_v1_description) StdoutLine: {'line': b'running install\n'}
+[8.436386] (spot_v1_description) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[8.437553] (spot_v1_description) StderrLine: {'line': b'  warnings.warn(\n'}
+[8.438300] (spot_v1_description) StdoutLine: {'line': b'running install_lib\n'}
+[8.438922] (bwt901cl_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.443977] (spot_v1_description) StdoutLine: {'line': b'running install_data\n'}
+[8.445661] (bwt901cl_pkg) StdoutLine: {'line': b"removing '/home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages/bwt901cl_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[8.447737] (bwt901cl_pkg) StdoutLine: {'line': b'Copying ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info to /home/rob/spot_ws/install/bwt901cl_pkg/lib/python3.10/site-packages/bwt901cl_pkg-0.0.0-py3.10.egg-info\n'}
+[8.451135] (spot_v1_description) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.454777] (bwt901cl_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[8.461126] (spot_v1_description) StdoutLine: {'line': b"removing '/home/rob/spot_ws/install/spot_v1_description/lib/python3.10/site-packages/spot_v1_description-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[8.464605] (spot_v1_description) StdoutLine: {'line': b'Copying ../../build/spot_v1_description/spot_v1_description.egg-info to /home/rob/spot_ws/install/spot_v1_description/lib/python3.10/site-packages/spot_v1_description-0.0.0-py3.10.egg-info\n'}
+[8.465261] (servo_controller) StdoutLine: {'line': b'running egg_info\n'}
+[8.469308] (servo_controller) StdoutLine: {'line': b'writing ../../build/servo_controller/servo_controller.egg-info/PKG-INFO\n'}
+[8.471209] (servo_controller) StdoutLine: {'line': b'writing dependency_links to ../../build/servo_controller/servo_controller.egg-info/dependency_links.txt\n'}
+[8.473193] (servo_controller) StdoutLine: {'line': b'writing entry points to ../../build/servo_controller/servo_controller.egg-info/entry_points.txt\n'}
+[8.474240] (spot_v1_description) StdoutLine: {'line': b'running install_scripts\n'}
+[8.475029] (servo_controller) StdoutLine: {'line': b'writing requirements to ../../build/servo_controller/servo_controller.egg-info/requires.txt\n'}
+[8.476056] (servo_controller) StdoutLine: {'line': b'writing top-level names to ../../build/servo_controller/servo_controller.egg-info/top_level.txt\n'}
+[8.488386] (servo_controller) StdoutLine: {'line': b"reading manifest file '../../build/servo_controller/servo_controller.egg-info/SOURCES.txt'\n"}
+[8.494015] (servo_controller) StdoutLine: {'line': b"writing manifest file '../../build/servo_controller/servo_controller.egg-info/SOURCES.txt'\n"}
+[8.496192] (servo_controller) StdoutLine: {'line': b'running build\n'}
+[8.497179] (servo_controller) StdoutLine: {'line': b'running build_py\n'}
+[8.498131] (servo_controller) StdoutLine: {'line': b'running install\n'}
+[8.499260] (servo_controller) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[8.500017] (servo_controller) StderrLine: {'line': b'  warnings.warn(\n'}
+[8.500892] (servo_controller) StdoutLine: {'line': b'running install_lib\n'}
+[8.507118] (servo_controller) StdoutLine: {'line': b'running install_data\n'}
+[8.509820] (servo_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.521084] (servo_controller) StdoutLine: {'line': b"removing '/home/rob/spot_ws/install/servo_controller/lib/python3.10/site-packages/servo_controller-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[8.523040] (servo_controller) StdoutLine: {'line': b'Copying ../../build/servo_controller/servo_controller.egg-info to /home/rob/spot_ws/install/servo_controller/lib/python3.10/site-packages/servo_controller-0.0.0-py3.10.egg-info\n'}
+[8.530765] (servo_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[8.531611] (-) TimerEvent: {}
+[8.558722] (bwt901cl_pkg) StdoutLine: {'line': b'Installing imu_bwt901cl script to /home/rob/spot_ws/install/bwt901cl_pkg/lib/bwt901cl_pkg\n'}
+[8.561450] (bwt901cl_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/rob/spot_ws/build/bwt901cl_pkg/install.log'\n"}
+[8.594004] (spot_v1_description) StdoutLine: {'line': b"writing list of installed files to '/home/rob/spot_ws/build/spot_v1_description/install.log'\n"}
+[8.631960] (-) TimerEvent: {}
+[8.691408] (servo_controller) StdoutLine: {'line': b"writing list of installed files to '/home/rob/spot_ws/build/servo_controller/install.log'\n"}
+[8.732336] (-) TimerEvent: {}
+[8.800681] (bwt901cl_pkg) CommandEnded: {'returncode': 0}
+[8.833255] (-) TimerEvent: {}
+[8.934776] (-) TimerEvent: {}
+[9.035613] (-) TimerEvent: {}
+[9.103605] (bwt901cl_pkg) JobEnded: {'identifier': 'bwt901cl_pkg', 'rc': 0}
+[9.108799] (servo_controller) CommandEnded: {'returncode': 0}
+[9.135739] (-) TimerEvent: {}
+[9.236647] (-) TimerEvent: {}
+[9.336735] (servo_controller) JobEnded: {'identifier': 'servo_controller', 'rc': 0}
+[9.340462] (-) TimerEvent: {}
+[9.341027] (spot_v1_description) CommandEnded: {'returncode': 0}
+[9.440612] (-) TimerEvent: {}
+[9.541877] (-) TimerEvent: {}
+[9.622133] (spot_v1_description) JobEnded: {'identifier': 'spot_v1_description', 'rc': 0}
+[9.625169] (-) EventReactorShutdown: {}

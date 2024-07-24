@@ -25,7 +25,7 @@ class Imu901cl(Node):
 
         angle, angular_velocity, accel, temp, magnetic, quaternion, time = self.imu_sensor.getData()
 
-        msg_tmp.temperature = float(temp)
+        msg_tmp.temperature = temp
         self.pub_tmp.publish(msg_tmp)
 
         msg_mag.magnetic_field.x = float(magnetic[0])
@@ -41,13 +41,13 @@ class Imu901cl(Node):
         msg_imu.angular_velocity.y = float(angular_velocity[1])
         msg_imu.angular_velocity.z = float(angular_velocity[2])
         msg_imu.linear_acceleration.x = float(accel[0])
-        msg_imu.linear_acceleration.y = float(ccel[1])
+        msg_imu.linear_acceleration.y = float(accel[1])
         msg_imu.linear_acceleration.z = float(accel[2])
         self.pub_imu.publish(msg_imu)
 
-        msg_ang.x = float(angle[0])
-        msg_ang.y = float(angle[1])
-        msg_ang.z = float(angle[2])
+        msg_ang.x = angle[0]
+        msg_ang.y = angle[1]
+        msg_ang.z = angle[2]
         self.pub_ang.publish(msg_ang)
 
         #print("Time:", time)

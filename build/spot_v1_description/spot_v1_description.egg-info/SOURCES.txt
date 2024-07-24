@@ -11,6 +11,8 @@ setup.py
 config/display.rviz
 launch/display.launch.py
 launch/gazebo.launch.py
+meshes/base_imu_1.stl
+meshes/base_laser_1.stl
 meshes/base_link.stl
 meshes/elbow_bl_5.stl
 meshes/elbow_br_1.stl

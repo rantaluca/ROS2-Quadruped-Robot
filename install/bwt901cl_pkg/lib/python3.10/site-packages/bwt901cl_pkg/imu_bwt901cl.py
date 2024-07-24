@@ -9,13 +9,13 @@ from .src.bwt901cl import BWT901CL
 class Imu901cl(Node):
     def __init__(self, time_interval=1.0):
         super().__init__('imu_bwt901cl')
-        self.pub_imu = self.create_publisher(Imu, '/sensor/bwt901cl/Imu', 10)
-        self.pub_mag = self.create_publisher(MagneticField, '/sensor/bwt901cl/MagneticField', 10)
-        self.pub_tmp = self.create_publisher(Temperature, '/sensor/bwt901cl/Temperature', 10)
-        self.pub_ang = self.create_publisher(Vector3, '/sensor/bwt901cl/Angle', 10)
+        self.pub_imu = self.create_publisher(Imu, '/imu/data', 10)
+        self.pub_mag = self.create_publisher(MagneticField, '/imu/mag', 10)
+        self.pub_tmp = self.create_publisher(Temperature, '/imu/temp', 10)
+        self.pub_ang = self.create_publisher(Vector3, '/imu/angle', 10)
         self.tmr = self.create_timer(time_interval, self.timer_callback)
-        subprocess.call("sudo chmod 777 /dev/ttyUSB0", shell=True)
-        self.imu_sensor =  BWT901CL("/dev/ttyUSB0")
+        subprocess.call("sudo chmod 777 /dev/ttyUSB1", shell=True)
+        self.imu_sensor =  BWT901CL("/dev/ttyUSB1")
 
     def timer_callback(self):
         msg_imu = Imu()

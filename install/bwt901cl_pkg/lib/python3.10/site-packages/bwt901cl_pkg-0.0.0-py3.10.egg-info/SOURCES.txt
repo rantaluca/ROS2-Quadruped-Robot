@@ -12,6 +12,8 @@ setup.py
 ../../build/bwt901cl_pkg/bwt901cl_pkg.egg-info/zip-safe
 bwt901cl_pkg/__init__.py
 bwt901cl_pkg/imu_bwt901cl.py
+bwt901cl_pkg/test.py
+bwt901cl_pkg/tf_broadcaster.py
 bwt901cl_pkg/src/__init__.py
 bwt901cl_pkg/src/bwt901cl.py
 resource/bwt901cl_pkg

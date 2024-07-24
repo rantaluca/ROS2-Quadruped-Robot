@@ -298,7 +298,7 @@
   </collision>
 </link>
 
-<link name="base_imu_1">
+<link name="base_imu">
   <inertial>
     <origin xyz="3.552713678800501e-17 2.7042609152677644e-07 -0.0024999999999999883" rpy="0 0 0"/>
     <mass value="0.0008185"/>
@@ -307,14 +307,14 @@
   <visual>
     <origin xyz="-0.0 0.024491 -0.125" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find spot_v1_description)/meshes/base_imu_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find spot_v1_description)/meshes/base_imu.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0 0.024491 -0.125" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find spot_v1_description)/meshes/base_imu_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find spot_v1_description)/meshes/base_imu.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -424,7 +424,7 @@
 <joint name="Rigid 49" type="fixed">
   <origin xyz="0.0 -0.024491 0.125" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="base_imu_1"/>
+  <child link="base_imu"/>
 </joint>
 
 </robot>

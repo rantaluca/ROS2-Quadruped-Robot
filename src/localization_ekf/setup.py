@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'odometry'
+package_name = 'localization_ekf'
 
 setup(
     name=package_name,

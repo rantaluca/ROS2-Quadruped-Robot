@@ -27,14 +27,14 @@ class ImuTfBroadcaster(Node):
         # Subscribe to orientation data topic
         self.subscription_orientation = self.create_subscription(
             Vector3,
-            '/sensor/bwt901cl/Angle',
+            '/imu/angle',
             self.orientation_callback,
             10)
         
         # Subscribe to linear accel data topic
         self.subscription_orientation = self.create_subscription(
             Imu,
-            '/sensor/bwt901cl/Imu',
+            '/imu/data',
             self.linear_accel_callback,
             10)
 

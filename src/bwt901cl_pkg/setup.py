@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'imu_bwt901cl = bwt901cl_pkg.imu_bwt901cl:main'
+            'imu_bwt901cl = bwt901cl_pkg.imu_bwt901cl:main',
+            'tf_broadcaster = bwt901cl_pkg.tf_broadcaster:main'
         ],
     },
     py_modules=["bwt901cl_pkg.src.bwt901cl"]

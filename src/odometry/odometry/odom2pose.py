@@ -2,11 +2,11 @@
 
 import numpy as np
 import math 
-import rospy
+import rclpy
+from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
-from turtlebot3_msgs.msg import SensorState
-from sensor_msgs.msg import Imu, MagneticField
-from tf.transformations import quaternion_from_euler
+from sensor_msgs.msg import Imu
+from tf_transformations import quaternion_from_euler
 
 def coordinates_to_message(x, y, O, t):
     msg = PoseStamped()
@@ -20,9 +20,9 @@ def coordinates_to_message(x, y, O, t):
     msg.header.frame_id = 'base_link'
     return msg
 
-class Odom2PoseNode:
+class Odom2PoseNode(Node):
     def __init__(self):
-        rospy.init_node('odom2pose')
+        super().__init__('odom2pose')
 
         # Constants
         self.ENCODER_RESOLUTION = 4096
@@ -40,41 +40,44 @@ class Odom2PoseNode:
         self.v = 0
 
         # Publishers
-        self.pub_gyro = rospy.Publisher('/pose_gyro', PoseStamped, queue_size=0)
+        self.pub_gyro = self.create_publisher(PoseStamped, '/pose_gyro', 10)
 
         # Subscribers
-        self.sub_gyro = rospy.Subscriber('/imu', Imu, self.callback_gyro)
+        self.sub_gyro = self.create_subscription(Imu, '/imu', self.callback_gyro, 10)
 
     def callback_gyro(self, gyro):
         if self.v == 0:
             return
 
         # Compute the elapsed time
-        t = gyro.header.stamp.to_sec()
+        t = gyro.header.stamp.sec + gyro.header.stamp.nanosec * 1e-9
         dt = t - self.prev_gyro_t
         if self.prev_gyro_t == 0:
             self.prev_gyro_t = t
             return
         self.prev_gyro_t = t
 
-        # TODO: compute the angular velocity
-        
-        self.w = gyro.angular_velocity.z*dt
+        # Compute the angular velocity
+        self.w = gyro.angular_velocity.z * dt
 
-        # TODO: update O_gyro, x_gyro and y_gyro accordingly (using self.v)
-        
+        # Update O_gyro, x_gyro and y_gyro accordingly (using self.v)
+        self.O_gyro += self.w
+        self.x_gyro += self.v * dt * math.cos(self.O_gyro)
+        self.y_gyro += self.v * dt * math.sin(self.O_gyro)
 
-        self.O_gyro = self.O_gyro + self.w 
-        self.x_gyro = self.x_gyro  + self.v * dt  * math.cos(self.O_gyro)
-        self.y_gyro = self.y_gyro + self.v * dt  * math.sin(self.O_gyro)
-    
-
-        msg = coordinates_to_message(self.x_gyro, self.y_gyro,self.O_gyro, gyro.header.stamp)
+        msg = coordinates_to_message(self.x_gyro, self.y_gyro, self.O_gyro, gyro.header.stamp)
         self.pub_gyro.publish(msg)
-        
-if __name__ == '__main__':
+
+def main(args=None):
+    rclpy.init(args=args)
     node = Odom2PoseNode()
     try:
-        rospy.spin()
-    except rospy.ROSInterruptException:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
         pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

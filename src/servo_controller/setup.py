@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'joint_state_subscriber = servo_controller.joint_subscriber:main',
         ],
     },
 )

@@ -1,0 +1,24 @@
+# ekf_config.yaml
+
+ekf_filter_node:
+  frequency: 30
+  sensor_timeout: 0.1
+  two_d_mode: false
+  publish_tf: true
+  map_frame: map              # Defaults to "map" if unspecified
+  odom_frame: odom            # Defaults to "odom" if unspecified
+  base_link_frame: base_link  # Defaults to "base_link" if unspecified
+  world_frame: odom           # Defaults to the value of odom_frame if unspecified
+
+  # IMU configuration
+  imu0: /imu/data
+  imu0_config: [false, false, false,
+                false, false, false,  # Roll, pitch, yaw (orientation)
+                false, false, false,  # Linear velocity (not used)
+                true,  true,  true,   # Linear acceleration (x, y, z)
+                true,  true,  true]   # Angular velocity (roll, pitch, yaw)
+  imu0_queue_size: 10
+  imu0_nodelay: false
+  imu0_differential: false
+  imu0_relative: true
+

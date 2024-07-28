@@ -18,18 +18,18 @@ class JointStateSubscriber(Node):
 
     def listener_callback(self, msg):
         motor_mapping = {
-            'lower_leg_bl': 0,
-            'upper_leg_bl': 1,
-            'elbow_bl': 2,
-            'lower_leg_br': 3,
-            'upper_leg_br': 4,
-            'elbow_br': 5,
-            'lower_leg_fl': 6,
-            'upper_leg_fl': 7,
-            'elbow_fl': 8,
-            'lower_leg_fr': 9,
-            'upper_leg_fr': 10,
-            'elbow_fr': 11,
+            'Revolute 33': 0,#lower_leg_bl
+            'Revolute 32': 1,#upper_leg_bl
+            'Revolute 43': 2,#elbow_bl
+            'Revolute 38': 3,#lower_leg_br
+            'Revolute 36': 4,#upper_leg_br
+            'Revolute 46': 5,#elbow_br
+            'Revolute 29': 6,#lower_leg_fl
+            'Revolute 30': 7,#upper_leg_fl
+            'Revolute 45': 8,#elbow_fl
+            'Revolute 37': 9,#lower_leg_fr
+            'Revolute 35': 10, #upper_leg_fr
+            'Revolute 47': 11,#elbow_fr
         }
         for name, position in zip(msg.name, msg.position):
             if name in motor_mapping:

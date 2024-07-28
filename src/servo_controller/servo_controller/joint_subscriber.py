@@ -37,8 +37,13 @@ class JointStateSubscriber(Node):
                 self.pca.servo[motor_index].angle = self.convert_to_servo_angle(position)
 
     def convert_to_servo_angle(self, joint_position):
-        # Implement the conversion from joint position to servo angle
-        return joint_position * (180.0 / 3.14159)  # Example conversion, adjust as needed
+        #convert to 0-270deg
+        angle = joint_position * 180 / 3.14159 - 135
+        if angle > 270:
+            angle = 270
+        elif angle < 0:
+            angle = 0
+        return angle
 
 def main(args=None):
     rclpy.init(args=args)

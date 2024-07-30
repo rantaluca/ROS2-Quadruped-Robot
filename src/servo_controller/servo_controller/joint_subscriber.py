@@ -38,11 +38,13 @@ class JointStateSubscriber(Node):
 
     def convert_to_servo_angle(self, joint_position):
         #convert to 0-270deg
-        angle = joint_position * 180 / 3.14159 - 135
+        angle = joint_position * 180 / 3.14159 + 135
         if angle > 270:
             angle = 270
         elif angle < 0:
             angle = 0
+        print("The angle is:")
+        print(angle)
         return angle
 
 def main(args=None):

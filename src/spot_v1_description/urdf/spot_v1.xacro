@@ -347,7 +347,7 @@
   <origin xyz="-0.003 0.02445 -0.083518" rpy="0 0 0"/>
   <parent link="upper_bl_1"/>
   <child link="lower_bl_1"/>
-  <axis xyz="-1.0 0.0 0.0"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
   <limit upper="0.785398" lower="-0.872665" effort="100" velocity="100"/>
 </joint>
 
@@ -403,7 +403,7 @@
   <origin xyz="0.0625 -0.188018 0.17" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="elbow_br_1"/>
-  <axis xyz="0.0 1.0 0.0"/>
+  <axis xyz="0.0 -1.0 0.0"/>
   <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
 </joint>
 

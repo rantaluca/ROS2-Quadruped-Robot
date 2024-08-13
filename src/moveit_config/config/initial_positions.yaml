@@ -1,0 +1,15 @@
+# Default initial positions for spot_v1's ros2_control fake system
+
+initial_positions:
+  Revolute 29: 0
+  Revolute 30: 0
+  Revolute 32: 0
+  Revolute 33: 0
+  Revolute 35: 0
+  Revolute 36: 0
+  Revolute 37: 0
+  Revolute 38: 0
+  Revolute 43: 0
+  Revolute 45: 0
+  Revolute 46: 0
+  Revolute 47: 0

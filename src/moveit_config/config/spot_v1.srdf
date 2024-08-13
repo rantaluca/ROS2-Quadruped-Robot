@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot name="spot_v1">
+    <!--GROUPS: Representation of a set of joints and links. This can be useful for specifying DOF to plan for, defining arms, end effectors, etc-->
+    <!--LINKS: When a link is specified, the parent joint of that link (if it exists) is automatically included-->
+    <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
+    <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
+    <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+    <group name="fl_leg">
+        <chain base_link="base_link" tip_link="lower_fl_1"/>
+    </group>
+    <group name="fr_leg">
+        <chain base_link="base_link" tip_link="lower_fr_1"/>
+    </group>
+    <group name="bl_leg">
+        <chain base_link="base_link" tip_link="lower_bl_1"/>
+    </group>
+    <group name="br_leg">
+        <chain base_link="base_link" tip_link="lower_br_1"/>
+    </group>
+    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <end_effector name="fl_feet" parent_link="lower_fl_1" group="fl_leg" parent_group="fl_leg"/>
+    <end_effector name="fr_feet" parent_link="lower_fr_1" group="fr_leg" parent_group="fr_leg"/>
+    <end_effector name="bl_feet" parent_link="lower_bl_1" group="bl_leg" parent_group="bl_leg"/>
+    <end_effector name="br_feet" parent_link="lower_br_1" group="br_leg" parent_group="br_leg"/>
+</robot>

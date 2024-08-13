@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="spot_v1">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import spot_v1 urdf file -->
+    <xacro:include filename="$(find spot_v1_description)/urdf/spot_v1.xacro" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="spot_v1.ros2_control.xacro" />
+
+
+    <xacro:spot_v1_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>

@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: spot_v1_description
+    relative_path: ../spot_v1_description/urdf/spot_v1.xacro
+  srdf:
+    relative_path: config/spot_v1.srdf
+  package_settings:
+    author_name: robert antaluca
+    author_email: dev@antaluca.com
+    generated_timestamp: 1723558684
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

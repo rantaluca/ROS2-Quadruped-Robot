@@ -1,70 +1,116 @@
 # joint_limits.yaml allows the dynamics properties specified in the URDF to be overwritten or augmented as needed
 
-# For beginners, we downscale velocity and acceleration limits.
-# You can always specify higher scaling factors (<= 1.0) in your motion requests.  # Increase the values below to 1.0 to always move at maximum speed.
+# Default scaling factors for velocity and acceleration
 default_velocity_scaling_factor: 0.1
 default_acceleration_scaling_factor: 0.1
 
-# Specific joint properties can be changed with the keys [max_position, min_position, max_velocity, max_acceleration]
+# Specific joint properties are defined with the keys [max_position, min_position, max_velocity, max_acceleration]
 # Joint limits can be turned off with [has_velocity_limits, has_acceleration_limits]
 joint_limits:
-  Revolute 29:
+  Revolute_29:
+    has_position_limits: true
+    min_position: -0.872665
+    max_position: 0.785398
     has_velocity_limits: true
-    max_velocity: 100
-    has_acceleration_limits: false
-    max_acceleration: 0
-  Revolute 30:
+    max_velocity: 2.0  # Updated to a more realistic value
+    has_acceleration_limits: true
+    max_acceleration: 1.0
+
+  Revolute_30:
+    has_position_limits: true
+    min_position: -0.5
+    max_position: 3.316126
     has_velocity_limits: true
-    max_velocity: 100
-    has_acceleration_limits: false
-    max_acceleration: 0
-  Revolute 32:
+    max_velocity: 2.0  # Updated to a more realistic value
+    has_acceleration_limits: true
+    max_acceleration: 1.0
+
+  Revolute_32:
+    has_position_limits: true
+    min_position: -0.5
+    max_position: 3.316126
     has_velocity_limits: true
-    max_velocity: 100
-    has_acceleration_limits: false
-    max_acceleration: 0
-  Revolute 33:
+    max_velocity: 2.0  # Updated to a more realistic value
+    has_acceleration_limits: true
+    max_acceleration: 1.0
+
+  Revolute_33:
+    has_position_limits: true
+    min_position: -0.872665
+    max_position: 0.785398
     has_velocity_limits: true
-    max_velocity: 100
-    has_acceleration_limits: false
-    max_acceleration: 0
-  Revolute 35:
+    max_velocity: 2.0  # Updated to a more realistic value
+    has_acceleration_limits: true
+    max_acceleration: 1.0
+
+  Revolute_35:
+    has_position_limits: true
+    min_position: -3.316126
+    max_position: -0.523599
     has_velocity_limits: true
-    max_velocity: 100
-    has_acceleration_limits: false
-    max_acceleration: 0
-  Revolute 36:
+    max_velocity: 2.0  # Updated to a more realistic value
+    has_acceleration_limits: true
+    max_acceleration: 1.0
+
+  Revolute_36:
+    has_position_limits: true
+    min_position: -3.316126
+    max_position: -0.523599
     has_velocity_limits: true
-    max_velocity: 100
-    has_acceleration_limits: false
-    max_acceleration: 0
-  Revolute 37:
+    max_velocity: 2.0  # Updated to a more realistic value
+    has_acceleration_limits: true
+    max_acceleration: 1.0
+
+  Revolute_37:
+    has_position_limits: true
+    min_position: -0.872665
+    max_position: 0.785398
     has_velocity_limits: true
-    max_velocity: 100
-    has_acceleration_limits: false
-    max_acceleration: 0
-  Revolute 38:
+    max_velocity: 2.0  # Updated to a more realistic value
+    has_acceleration_limits: true
+    max_acceleration: 1.0
+
+  Revolute_38:
+    has_position_limits: true
+    min_position: -0.872665
+    max_position: 0.785398
     has_velocity_limits: true
-    max_velocity: 100
-    has_acceleration_limits: false
-    max_acceleration: 0
-  Revolute 43:
+    max_velocity: 2.0  # Updated to a more realistic value
+    has_acceleration_limits: true
+    max_acceleration: 1.0
+
+  Revolute_43:
+    has_position_limits: true
+    min_position: -1.570796
+    max_position: 1.570796
     has_velocity_limits: true
-    max_velocity: 100
-    has_acceleration_limits: false
-    max_acceleration: 0
-  Revolute 45:
+    max_velocity: 2.0  # Updated to a more realistic value
+    has_acceleration_limits: true
+    max_acceleration: 1.0
+
+  Revolute_45:
+    has_position_limits: true
+    min_position: -1.570796
+    max_position: 1.570796
     has_velocity_limits: true
-    max_velocity: 100
-    has_acceleration_limits: false
-    max_acceleration: 0
-  Revolute 46:
+    max_velocity: 2.0  # Updated to a more realistic value
+    has_acceleration_limits: true
+    max_acceleration: 1.0
+
+  Revolute_46:
+    has_position_limits: true
+    min_position: -1.570796
+    max_position: 1.570796
     has_velocity_limits: true
-    max_velocity: 100
-    has_acceleration_limits: false
-    max_acceleration: 0
-  Revolute 47:
+    max_velocity: 2.0  # Updated to a more realistic value
+    has_acceleration_limits: true
+    max_acceleration: 1.0
+
+  Revolute_47:
+    has_position_limits: true
+    min_position: -1.570796
+    max_position: 1.570796
     has_velocity_limits: true
-    max_velocity: 100
-    has_acceleration_limits: false
-    max_acceleration: 0
+    max_velocity: 2.0  # Updated to a more realistic value
+    has_acceleration_limits: true
+    max_acceleration: 1.0

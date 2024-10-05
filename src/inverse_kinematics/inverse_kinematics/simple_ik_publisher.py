@@ -2,7 +2,6 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
 import math
-import numpy as np
 
 class InverseKinematicsPublisher(Node):
     def __init__(self):
@@ -27,14 +26,14 @@ class InverseKinematicsPublisher(Node):
 
         # Leg parameters (adjust based on your robot)
         self.leg_params = {
-            'l1': 0.1,  # Upper leg length
-            'l2': 0.1,  # Lower leg length
+            'l1': 0.087,  # Upper leg length
+            'l2': 0.111,  # Lower leg length
         }
 
         # Gait parameters
-        self.cycle_time = 6.0  # One second per gait cycle
+        self.cycle_time = 1.0  # One second per gait cycle
         self.step_length = 0.07
-        self.step_height = 0.1
+        self.step_height = 0.04
 
         # Start time
         self.start_time = self.get_clock().now()
@@ -43,30 +42,33 @@ class InverseKinematicsPublisher(Node):
         # Compute elapsed time
         current_time = (self.get_clock().now() - self.start_time).nanoseconds / 1e9
 
-        # Generate gait for each leg
-        for i in range(4):  # Four legs
-            t = current_time + (i % 2) * self.cycle_time / 2  # Offset for trot gait
-            x, y = self.gait_generator(t, self.cycle_time, self.step_length, self.step_height)
+        leg_phase_offsets = [0.0, 0.25, 0.5, 0.75]  # Leg phase offsets for walking gait
+        for i in range(4):  # For each leg
+            leg_phase = ((current_time / self.cycle_time) + leg_phase_offsets[i]) % 1.0
+            t_leg = leg_phase * self.cycle_time
 
-            # Inverse kinematics for leg
+            x, y = self.gait_generator(t_leg, self.cycle_time, self.step_length, self.step_height)
             theta1, theta2 = self.inverse_kinematics(x, y, self.leg_params)
 
             # Map to joint indices
             if i == 0:  # Back Left Leg
-                self.joint_state.position[1] = theta1  # Upper leg
-                self.joint_state.position[0] = theta2  # Lower leg
-            elif i == 1:  # Back Right Leg
+                self.joint_state.position[1] = -theta1  # Upper leg
+                self.joint_state.position[0] = -theta2  # Lower leg
+            elif i == 1:  # Front Left Leg
+                self.joint_state.position[7] = -theta1
+                self.joint_state.position[6] = -theta2
+            elif i == 2:  # Back Right Leg
                 self.joint_state.position[4] = theta1
                 self.joint_state.position[3] = theta2
-            elif i == 2:  # Front Left Leg
-                self.joint_state.position[7] = theta1
-                self.joint_state.position[6] = theta2
             elif i == 3:  # Front Right Leg
                 self.joint_state.position[10] = theta1
                 self.joint_state.position[9] = theta2
 
-            # Elbow joint (hip yaw/pitch)
-            self.joint_state.position[2 + i * 3] = 0.0  # Keep hip joint neutral
+        # Set hip yaw/pitch joints
+        self.joint_state.position[2] = 0.2  # Back Left Leg hip
+        self.joint_state.position[5] = -0.2  # Back Right Leg hip
+        self.joint_state.position[8] = 0.2  # Front Left Leg hip
+        self.joint_state.position[11] = -0.2  # Front Right Leg hip
 
         # Update timestamp and publish
         self.joint_state.header.stamp = self.get_clock().now().to_msg()
@@ -91,19 +93,22 @@ class InverseKinematicsPublisher(Node):
         k2 = l2 * math.sin(theta2)
         theta1 = math.atan2(y, x) - math.atan2(k2, k1)
 
-        return theta1,  math.pi - theta2
+        return theta1, math.pi - theta2
 
     def gait_generator(self, t, cycle_time, step_length, step_height):
         phase = (t % cycle_time) / cycle_time
-        y = 0.0
-        if phase < 0.5:
-            # Swing phase
-            x = step_length * (2 * phase - 1)
-            y = step_height * np.sin(phase)
 
+        if phase < 0.5:
+            # Swing phase (foot moves forward and upward)
+            normalized_phase = phase / 0.5
+            x = -step_length / 2 + step_length * normalized_phase
+            y = step_height * math.sin(math.pi * normalized_phase)
         else:
-            # Stance phase
-            x = -step_length * (2 * phase - 1)
+            # Stance phase (foot moves backward and remains on the ground)
+            normalized_phase = (phase - 0.5) / 0.5
+            x = step_length / 2 - step_length * normalized_phase
+            y = 0.0  # Foot is on the ground during stance
+
         return x, y
 
 def main(args=None):
